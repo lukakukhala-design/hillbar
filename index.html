@@ -14,9 +14,8 @@
       line-height: 1.6;
     }
     header {
-      background: #fff;
+      background: #000;
       padding: 20px 30px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -24,13 +23,12 @@
       top: 0;
       z-index: 1000;
     }
-    header h1 {
-      font-size: 1.8rem;
-      color: #e63946;
+    .logo {
+      height: 40px;
     }
     nav a {
       margin-left: 20px;
-      color: #222;
+      color: #fff;
       text-decoration: none;
       font-weight: 600;
     }
@@ -109,10 +107,25 @@
       display: inline-block;
       margin: 10px;
       text-decoration: none;
-      background: #e63946;
-      color: white;
       padding: 10px 20px;
       border-radius: 8px;
+      font-weight: bold;
+    }
+    .contact-links a[href*="wolt"] {
+      background: #00aced;
+      color: white;
+    }
+    .contact-links a[href*="glovo"] {
+      background: #ffc400;
+      color: black;
+    }
+    .contact-links a[href*="instagram"] {
+      background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af);
+      color: white;
+    }
+    .contact-links a[href*="maps"] {
+      background: #4285f4;
+      color: white;
     }
     footer {
       background: #1d3557;
@@ -125,7 +138,7 @@
 </head>
 <body>
   <header>
-    <h1>Hill Bar</h1>
+    <img src="https://hillbar.ge/logo.png" alt="Hill Bar Logo" class="logo">
     <nav>
       <a href="#menu">მენიუ</a>
       <a href="#about">ჩვენს შესახებ</a>
@@ -140,6 +153,16 @@
   <section id="menu" class="section">
     <h3>მენიუ</h3>
     <div class="menu-items">
+      <div class="menu-item">
+  <img src="https://i.imgur.com/M7Xb1Ez.jpg" alt="4 Cheese Burger">
+  <h4>4 Cheese Burger</h4>
+  <p>₾25.90</p>
+</div>
+      <div class="menu-item">
+        <img src="https://i.imgur.com/EnCeUq0.jpg" alt="Hill Chicken Burger">
+        <h4>Hill Chicken</h4>
+        <p>₾18.00</p>
+      </div>
       <div class="menu-item">
         <img src="https://images.unsplash.com/photo-1550547660-d9450f859349" alt="ბურგერი">
         <h4>კლასიკური ბურგერი</h4>
@@ -173,11 +196,11 @@
   <section id="contact" class="section">
     <h3>დაგვიკავშირდი</h3>
     <p style="text-align: center;">ტელეფონი: <a href="tel:+995592145554">+995 592 14 55 54</a></p>
-    <p style="text-align: center;"><a href="https://www.google.com/maps/place/Hill+%E2%80%A2+%E1%83%B0%E1%83%98%E1%83%9A%E1%83%98/@41.7153931,44.7525125,18.5z/data=!4m6!3m5!1s0x40440d20e9f13c11:0xfa6fdd149b9bcfe2!8m2!3d41.7153376!4d44.7533682!16s%2Fg%2F11qps3hxrq?entry=ttu" target="_blank">გოგლ რუკაზე ნახე</a></p>
     <div class="contact-links" style="text-align: center;">
-      <a href="#">Wolt</a>
-      <a href="#">Glovo</a>
+      <a href="https://wolt.com/" target="_blank">Wolt</a>
+      <a href="https://glovoapp.com/" target="_blank">Glovo</a>
       <a href="https://www.instagram.com/hillbar_tbilisi" target="_blank">Instagram</a>
+      <a href="https://www.google.com/maps/place/Hill+Bar/@41.7153376,44.7533682,18z" target="_blank">Google Maps</a>
     </div>
   </section>
 
