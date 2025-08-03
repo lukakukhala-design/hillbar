@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hill Bar</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Roboto', sans-serif; background: #000; color: white; }
+    header { background: #ff0000; padding: 20px; text-align: center; }
+    header h1 { color: #fff700; font-size: 2.5rem; }
+    nav { margin-top: 10px; }
+    nav a { margin: 0 15px; color: white; text-decoration: none; font-weight: bold; }
+    .hero {
+      background: url('https://images.unsplash.com/photo-1606755962778-3c9334b6c979') no-repeat center center/cover;
+      height: 90vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      flex-direction: column;
+    }
+    .hero h2 { font-size: 3rem; color: white; background: rgba(0,0,0,0.6); padding: 10px 20px; }
+    .menu-section { padding: 40px 20px; background: #111; }
+    .menu-section h3 { color: #fff700; text-align: center; margin-bottom: 30px; font-size: 2rem; }
+    .menu-items { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+    .menu-item { background: #222; padding: 20px; border-radius: 10px; text-align: center; }
+    .menu-item img { width: 100%; border-radius: 10px; }
+    .menu-item h4 { margin: 10px 0; color: #ff0000; }
+    .about-section, .contact-section { padding: 40px 20px; text-align: center; }
+    .about-section h3, .contact-section h3 { color: #fff700; margin-bottom: 20px; font-size: 2rem; }
+    .footer { background: #111; color: #999; text-align: center; padding: 20px; }
+    .contact-links a { margin: 0 10px; color: #ff0000; text-decoration: none; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Hill Bar</h1>
+    <nav>
+      <a href="#menu">მენიუ</a>
+      <a href="#about">ჩვენს შესახებ</a>
+      <a href="#contact">კონტაქტი</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>ყველაზე გემრიელი ბურგერები თბილისში</h2>
+  </section>
+
+  <section id="menu" class="menu-section">
+    <h3>ჩვენი მენიუ</h3>
+    <div class="menu-items">
+      <div class="menu-item">
+        <img src="https://images.unsplash.com/photo-1550547660-d9450f859349" alt="ბურგერი">
+        <h4>კლასიკური ბურგერი</h4>
+        <p>₾14.00</p>
+      </div>
+      <div class="menu-item">
+        <img src="https://images.unsplash.com/photo-1586190848861-99aa4a171e90" alt="ბურგერი">
+        <h4>ჩიზბურგერი</h4>
+        <p>₾16.00</p>
+      </div>
+      <div class="menu-item">
+        <img src="https://images.unsplash.com/photo-1594212699903-b0c4c0f89bc3" alt="ბურგერი">
+        <h4>ბარი სეტ ბურგერი</h4>
+        <p>₾18.00</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about-section">
+    <h3>რატომ Hill Bar?</h3>
+    <p>ჩვენი ბურგერები მზადდება მხოლოდ მაღალი ხარისხის ინგრედიენტებით, სწრაფად და გემრიელად. გელით ვერეს ხეობაში, ქალაქის ხმაურისგან მოშორებით.</p>
+  </section>
+
+  <section id="contact" class="contact-section">
+    <h3>დაგვიკავშირდი</h3>
+    <p>მისამართი: ჭაბუა ამირეჯიბის გზატკეცილი, თბილისი</p>
+    <p>ტელეფონი: <a href="tel:+995592145554" style="color: #fff700; text-decoration: none;">+995 592 14 55 54</a></p>
+    <p><a href="https://www.google.com/maps/place/Hill+%E2%80%A2+%E1%83%B0%E1%83%98%E1%83%9A%E1%83%98/@41.7153931,44.7525125,18.5z/data=!4m6!3m5!1s0x40440d20e9f13c11:0xfa6fdd149b9bcfe2!8m2!3d41.7153376!4d44.7533682!16s%2Fg%2F11qps3hxrq?entry=ttu" target="_blank" style="color: #ff0000;">ნახე რუკაზე</a></p>
+    <div class="contact-links">
+      <a href="#">Wolt-ზე ნახე</a>
+      <a href="#">Glovo-ზე ნახე</a>
+      <a href="https://www.instagram.com/hillbar_tbilisi?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">Instagram</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 Hill Bar. ყველა უფლება დაცულია.</p>
+  </footer>
+</body>
+</html>
