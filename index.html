@@ -138,6 +138,24 @@
       font-size: 0.9rem;
     }
   </style>
+<style>
+  .shrink-header header {
+    padding: 10px 20px !important;
+  }
+  .shrink-header header img {
+    height: 70px !important;
+  }
+</style>
+<script>
+  window.addEventListener('scroll', function() {
+    const body = document.body;
+    if (window.scrollY > 100) {
+      body.classList.add('shrink-header');
+    } else {
+      body.classList.remove('shrink-header');
+    }
+  });
+</script>
 </head>
 <body>
   <header style="justify-content: center; flex-direction: column; text-align: center;">
